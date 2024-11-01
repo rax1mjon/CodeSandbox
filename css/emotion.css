@@ -22,9 +22,10 @@ p:hover {
     transform: scale(1.6);
 }
 
-.board--cards img {
+html body .board--cards img {
     transform: scale(1) !important;
 }
+
 
 /* shrink  */
 

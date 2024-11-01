@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeSandbox</title>
-
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./fonts/font.css">
     <link rel="stylesheet" href="./css/media.css">
@@ -128,7 +129,7 @@
         <section id="hero">
             <div class="container">
                 <div class="hero--wrapper"> 
-                    <div class="hero-image">
+                    <div class="hero-image" > 
                         <img src="./images/hero_big.png" alt="The new CodeSpandbox Experience">
                     </div>
                     <div class="hero--main">
@@ -164,10 +165,11 @@
 
                         </div>
                     </div>
-                    <div class="setup--top__image">
+                    <div class="setup--top__image"  data-aos="fade-up"
+                         data-aos-anchor-placement="center-center">
                         <img src="./images/setup_1.png" alt="there is visual studio code desktop">
                     </div>
-                    <div class="setup--bottom__image">
+                    <div class="setup--bottom__image"   data-aos="flip-up" data-aos-offset="500">
                         <img src="./images/setup_s.png"
                             alt="there is visual studio code macbook desktop and mobile desktop">
                     </div>
@@ -189,21 +191,34 @@
                         <a href="" class="ais--main__link">Learn more</a>
                     </div>
                     <div class="ios--photos">
-                        <img class="ios--big" src="./images/ios-big.png" alt="there is a CodeSandbox on desktop ">
+                        <img
+                        data-aos="zoom-in-down" class="ios--big" src="./images/ios-big.png" alt="there is a CodeSandbox on desktop ">
                         <div class="ois--photos--smalls">
                             <div class="ios--photo-left">
-                                <img class="ios--left__top" src="./images/ios-left-top.png"
+                                <img data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"  class="ios--left__top" src="./images/ios-left-top.png"
                                     alt="there is a our site user">
-                                <img class="ios--left__middle" src="./images/ios-left-middle.png"
+                                <img data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"  class="ios--left__middle" src="./images/ios-left-middle.png"
                                     alt="there is a our site user">
-                                <img class="ios--left__bottom" src="./images/ios-left-bottom.png"
+                                <img data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine" class="ios--left__bottom" src="./images/ios-left-bottom.png"
                                     alt="there is a our site user">
                             </div>
                             <div class="ios--photo-right">
-                                <img class="ios-top" src="./images/ios-right-top.png" alt="there is a our site user">
-                                <img class="ios-middle" src="./images/ios-right-middle.png"
+                                <img data-aos="fade-left"
+       data-aos-offset="300"
+     data-aos-duration="500" class="ios-top" src="./images/ios-right-top.png" alt="there is a our site user">
+                                <img data-aos="fade-left"
+       data-aos-offset="300"
+     data-aos-duration="500" class="ios-middle" src="./images/ios-right-middle.png"
                                     alt="there is a our site user">
-                                <img class="ios-bottom" src="./images/ios-rigt-bottom.png"
+                                <img data-aos="fade-left"
+       data-aos-offset="300"  data-aos-offset="300"
+     data-aos-duration="500" class="ios-bottom" src="./images/ios-rigt-bottom.png"
                                     alt="there is a our site user">
                             </div>
                         </div>
@@ -224,7 +239,7 @@
                                 development work flowing.</p>
                         </div>
                         <ul class="corus--corusel__bar">
-                            <li class="corus--coruse__card">
+                            <li class="corus--coruse__card"   data-aos-offset="500" data-aos="flip-up" >
                                 <div class="corus--coruse-image">
                                     <svg width="100" height="100" viewBox="0 0 100 100"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -242,7 +257,8 @@
                                 <p class="curus--item__text">Quickly create real, working prototypes. Test ideas earlier
                                     and iterate more.</p>
                             </li>
-                            <li class="corus--coruse__card">
+                            <li class="corus--coruse__card"   
+                            data-aos-offset="400" data-aos="flip-down">
                                 <div class="corus--coruse-image">
                                     <svg width="100" height="100" viewBox="0 0 100 100"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -288,7 +304,7 @@
                                 <p class="curus--item__text">Use code, apps, and templates collectively. Learn from each
                                     other and bake-in best practice.</p>
                             </li>
-                            <li class="corus--coruse__card">
+                            <li class="corus--coruse__card" data-aos-offset="500" data-aos="flip-up">
                                 <div class="corus--coruse-image">
                                     <svg width="100" height="100" viewBox="0 0 100 100"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -333,7 +349,8 @@
                                 development work flowing.</p>
                         </div>
                         <ul class="corus--corusel__bar">
-                            <li class="corus--coruse__card">
+                            <li class="corus--coruse__card"
+                            data-aos-offset="400" data-aos="flip-down">
                                 <div class="corus--coruse-image">
                                     <svg width="100" height="32" viewBox="0 0 100 32"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -346,7 +363,7 @@
                                 <p class="curus--item__text">Use private packages, or any of the 1M+ public ones, to
                                     build powerful apps quickly.</p>
                             </li>
-                            <li class="corus--coruse__card">
+                            <li class="corus--coruse__card" data-aos-offset="500" data-aos="flip-up">
                                 <div class="corus--coruse-image">
                                     <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -359,7 +376,8 @@
                                 <p class="curus--item__text">Custom environments built specifically for React, Vue,
                                     Angular, and many more.</p>
                             </li>
-                            <li class="corus--coruse__card">
+                            <li class="corus--coruse__card"
+                            data-aos-offset="400" data-aos="flip-down">
                                 <div class="corus--coruse-image">
                                     <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -378,7 +396,7 @@
                             <h2 class="corus--corusel__title">What are others saying?.</h2>
                         </div>
                         <ul class="corus--corusel__bar">
-                            <li class="corus--coruse__card">
+                            <li class="corus--coruse__card" data-aos-offset="500" data-aos="flip-up">
                                 <p class="corus--coruse__text">“It's dramatically improved my experience of sharing
                                     ideas”</p>
                                 <div class="corus--corusel-b__img">
@@ -388,7 +406,8 @@
                                 <span class="corusel--user__about">Software Engineer, React Core Team</span>
 
                             </li>
-                            <li class="corus--coruse__card">
+                            <li class="corus--coruse__card" 
+                            data-aos-offset="400" data-aos="flip-down">
                                 <p class="corus--coruse__text">“It's dramatically improved my experience of sharing
                                     ideas”</p>
                                 <div class="corus--corusel-b__img">
@@ -398,7 +417,7 @@
                                 <span class="corusel--user__about">Software Engineer, React Core Team</span>
 
                             </li>
-                            <li class="corus--coruse__card">
+                            <li class="corus--coruse__card"  data-aos-offset="500" data-aos="flip-up">
                                 <p class="corus--coruse__text">“It's dramatically improved my experience of sharing
                                     ideas”</p>
                                 <div class="corus--corusel-b__img">
@@ -509,16 +528,17 @@
             </div>
         </div>
     </footer>
+    <a id="backtop" href="#hero">
+        <img src="./images/to-the-top.png" alt="no img?">
+    </a>
 
-
+    
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/main.js"></script>
 </body>
 
 </html>
 
-<a id="backtop" href="#hero">
-    <img src="./images/to-the-top.png" alt="no img?">
-</a>
 
 <!-- Owl-carousel-->
 <!-- Aos library-->
