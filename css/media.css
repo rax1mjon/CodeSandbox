@@ -1,0 +1,158 @@
+@media (max-width: 1033px) {
+
+    nav {
+        padding: 15px 0;
+        flex-direction: column;
+    }
+
+    .nav--brand {
+
+        width: 100%;
+    }
+
+    #humburger {
+        display: inline-block;
+    }
+
+    .nav--bottom {
+        display: none;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .active {
+        display: flex;
+    }
+
+    .nav--list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    #nav--item {
+        padding: 0;
+    }
+
+    .nav--links {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .dark--mode {
+        transform: translateX(0);
+    }
+
+    #hero {
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 960px) {
+    .ios-top {
+        right: 50px;
+    }
+
+    .ios--left__top {
+        left: 70px;
+    }
+
+    .ios-middle {
+        right: -77px;
+    }
+
+    .corus--wrapper {
+        gap: 100px;
+    }
+
+    .corus--corusel__bar {
+        flex-direction: column;
+    }
+
+    .corus--coruse__card {
+        width: 341px !important;
+    }
+
+    #board {
+        padding-top: 100px;
+    }
+
+    .board--wrapper {
+        padding-bottom: 50px;
+    }
+
+    .board--main {
+        margin: 0;
+    }
+}
+
+@media (max-width: 750px) {
+        .footer--menus {
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 50px 20px;
+        }
+
+        .footer--wrapper {
+            gap: 50px;
+        }
+}
+
+
+@media (max-width: 655px) {
+    .setup--bar {
+        display: none;
+    }
+
+    .setup--top__image {
+        margin-bottom: 50px;
+    }
+
+    .ois--photos--smalls {
+        display: none;
+    }
+
+    .ios--main__title {
+        font-size: 54px;
+        line-height: 80px;
+    }
+}
+
+@media (max-width: 555px) {
+
+    .hero--wrapper {
+        gap: 80px;
+    }
+}
+
+@media (max-width: 453px) {
+
+
+    .hero--main__title {
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    .corus--corusel__main {
+        width: auto;
+    }
+
+    .corus--corusel__title {
+        font-size: 38px;
+        line-height: 38px;
+    }
+}
+
+
+
+
+@media (max-width: 400px) {
+    .corus--coruse__card {
+        padding: 50px !important;
+        width: calc(100% - 40px) !important;
+        height: auto !important;
+    }
+}

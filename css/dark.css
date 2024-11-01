@@ -1,0 +1,42 @@
+.dark {
+    --bg-0e: #100c30;
+    --bg-15: #9e0d0d;
+    --bg-34: #343434;
+    --bg-99: #00f7e38a;
+    --bg-9d: #851cdb;
+    --bg-f50: #f53333;
+    --bg-f73: #0dac30;
+    --bg-f96: #2f63c2;
+    --white: #c8d8e7;
+    --black: #011c40;
+}
+
+.dark .navbar-shrink {
+    background-color: #484b4e;
+}
+
+.dark .dark--mode img:nth-child(2) {
+    opacity: 0;
+    transform: translateX(20px);
+}
+
+.dark .dark--mode img:nth-child(1) {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.dark .hero-image {
+    box-shadow: 0 0 150px var(--bg-9d);
+}
+
+.dark .setup--top__image {
+    box-shadow: inset 0 0 100px var(--bg-9d), 0 0 150px var(--bg-9d);
+}
+
+.dark .setup--bottom__image {
+    box-shadow: inset 0 0 100px var(--bg-9d), 0 0 100px var(--bg-9d);
+}
+
+.dark .ios--photos img {
+    box-shadow: inset 0 0 100px var(--bg-9d) , 0 0 150px var(--bg-9d);
+}

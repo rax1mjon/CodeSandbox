@@ -1,0 +1,24 @@
+/* inter-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./fonts/inter-v18-latin-regular.eot");
+    src: url("./fonts/inter-v18-latin-regular.eot?#iefix") format("embedded-opentype"),
+        url("./fonts/inter-v18-latin-regular.woff2") format("woff2"),
+        url("./fonts/inter-v18-latin-regular.woff") format("woff"),
+        url("./fonts/inter-v18-latin-regular.ttf") format("truetype")
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./fonts/roboto-v32-latin-regular.eot");
+    src: url("./fonts/roboto-v32-latin-regular.eot?#iefix") format("embedded-opentype"),
+        url("./fonts/roboto-v32-latin-regular.woff2") format("woff2"),
+        url("./fonts/roboto-v32-latin-regular.woff") format("woff"),
+        url("./fonts/roboto-v32-latin-regular.ttf") format("truetype")
+}

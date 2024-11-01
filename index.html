@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeSandbox</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./fonts/font.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+
+<body>
+
+    <!-- <div id="loading">
+        <span class="loader"></span>
+    </div> -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <div class="nav--brand">
+                    <a href="./index.html" class="nav--logo">
+                        <svg width="141" height="20" viewBox="0 0 141 20" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_1_555)">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M0 19.9583H19.9165V0.0417337H0V19.9583ZM17.8796 17.9213V2.07865H2.03692V17.9213H17.8796Z" />
+                                <path
+                                    d="M40.5505 11.7533H38.4052C38.0935 13.6968 36.7917 14.8152 34.9949 14.8152C32.6113 14.8152 31.0528 12.9634 31.0528 10.0114C31.0528 7.09615 32.5563 5.20763 34.8666 5.20763C36.7367 5.20763 37.9652 6.30775 38.3135 8.28793H40.4586C40.037 5.39098 37.7086 3.50246 34.7933 3.50246C31.2911 3.50246 28.8708 6.39941 28.8708 10.0114C28.8708 13.7335 31.3461 16.5204 34.8483 16.5204C37.7636 16.5204 40.1103 14.6502 40.5505 11.7533Z" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M50.394 11.7533C50.394 9.27803 48.6887 6.98613 45.9017 6.98613C43.115 6.98613 41.4096 9.27803 41.4096 11.7533C41.4096 14.2285 43.115 16.5204 45.9017 16.5204C48.6887 16.5204 50.394 14.2285 50.394 11.7533ZM43.5183 11.7533C43.5183 9.79142 44.3799 8.47129 45.9017 8.47129C47.4421 8.47129 48.3037 9.79142 48.3037 11.7533C48.3037 13.6968 47.4421 15.0353 45.9017 15.0353C44.3799 15.0353 43.5183 13.6968 43.5183 11.7533Z" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M58.1929 14.4119H58.1379C57.698 15.677 56.6345 16.5204 55.241 16.5204C52.7473 16.5204 51.3905 14.3202 51.3905 11.7533C51.3905 9.18634 52.8023 6.98613 55.241 6.98613C56.6345 6.98613 57.698 7.81122 58.1379 9.07635H58.1929V3.6858H60.1547V16.3371H58.1929V14.4119ZM55.8826 8.47129C54.3608 8.47129 53.4992 9.79142 53.4992 11.7533C53.4992 13.6968 54.3608 15.0353 55.8826 15.0353C57.423 15.0353 58.2663 13.6968 58.2663 11.7533C58.2663 9.79142 57.423 8.47129 55.8826 8.47129Z" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M70.0184 13.4951H68.0199C67.8 14.2285 67.2864 15.0353 66.0946 15.0353C64.7011 15.0353 63.7295 14.0635 63.6379 12.395H70.1834C70.4584 9.2047 68.6616 6.98613 65.9296 6.98613C63.1977 6.98613 61.6392 9.22303 61.6392 11.7533C61.6392 14.2835 63.2343 16.5204 65.9663 16.5204C68.2033 16.5204 69.6334 15.3103 70.0184 13.4951ZM65.9296 8.47129C67.2681 8.47129 68.0566 9.42471 68.1849 10.9098H63.6562C63.7845 9.42471 64.5911 8.47129 65.9296 8.47129Z" />
+                                <path
+                                    d="M77.9198 9.05802C80.3035 9.60805 81.4953 10.8548 81.4953 12.8534C81.4953 14.9619 79.4416 16.5204 76.508 16.5204C73.1527 16.5204 71.3376 14.1735 71.1357 11.8816H73.2811C73.4094 13.5318 74.7479 14.8152 76.5263 14.8152C78.1398 14.8152 79.3316 14.1185 79.3316 12.945C79.3316 11.9183 78.5617 11.3682 76.9296 10.9832L75.0962 10.5615C72.6209 9.97477 71.3926 8.81965 71.3926 7.05948C71.3926 4.9326 73.4827 3.50246 76.0314 3.50246C79.2583 3.50246 80.9084 5.26263 81.1284 7.44451H78.9833C78.8183 5.94103 77.5532 5.20763 76.068 5.20763C74.6196 5.20763 73.5744 5.83102 73.5744 6.9128C73.5744 7.77455 74.2162 8.17791 76.0864 8.61795L77.9198 9.05802Z" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M89.2075 14.4119H89.2625V16.3371H91.2243V7.1695H89.2625V9.07635H89.2075C88.7673 7.81122 87.7038 6.98613 86.3103 6.98613C83.8719 6.98613 82.4601 9.18634 82.4601 11.7533C82.4601 14.3202 83.8169 16.5204 86.3103 16.5204C87.7038 16.5204 88.7673 15.677 89.2075 14.4119ZM84.5686 11.7533C84.5686 9.79142 85.4487 8.47129 86.9339 8.47129C88.419 8.47129 89.3358 9.79142 89.3358 11.7533C89.3358 13.6968 88.419 15.0353 86.9339 15.0353C85.4671 15.0353 84.5686 13.6968 84.5686 11.7533Z" />
+                                <path
+                                    d="M95.2207 10.8365V16.3371H93.222V7.1695H95.1655V8.96633H95.2022C95.5874 7.68287 96.5406 6.98613 97.8791 6.98613C99.8961 6.98613 100.886 8.36128 100.886 10.3781V16.3371H98.8876V10.9649C98.8876 9.25969 98.2827 8.48962 97.0542 8.48962C95.8257 8.48962 95.2207 9.33302 95.2207 10.8365Z" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M109.061 14.4119H109.116V16.3371H111.078V3.6858H109.116V9.07635H109.061C108.621 7.81122 107.557 6.98613 106.164 6.98613C103.725 6.98613 102.313 9.18634 102.313 11.7533C102.313 14.3202 103.67 16.5204 106.164 16.5204C107.557 16.5204 108.621 15.677 109.061 14.4119ZM104.422 11.7533C104.422 9.79142 105.284 8.47129 106.806 8.47129C108.346 8.47129 109.189 9.79142 109.189 11.7533C109.189 13.6968 108.346 15.0353 106.806 15.0353C105.284 15.0353 104.422 13.6968 104.422 11.7533Z" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M117.989 6.98613C120.428 6.98613 121.84 9.18634 121.84 11.7533C121.84 14.3202 120.483 16.5204 117.989 16.5204C116.596 16.5204 115.532 15.677 115.092 14.4119H115.037V16.3371H113.076V3.6858H115.037V9.07635H115.092C115.532 7.81122 116.596 6.98613 117.989 6.98613ZM117.348 8.47129C115.808 8.47129 114.964 9.79142 114.964 11.7533C114.964 13.6968 115.808 15.0353 117.348 15.0353C118.87 15.0353 119.731 13.6968 119.731 11.7533C119.731 9.79142 118.87 8.47129 117.348 8.47129Z" />
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M131.831 11.7533C131.831 9.27803 130.126 6.98613 127.339 6.98613C124.552 6.98613 122.847 9.27803 122.847 11.7533C122.847 14.2285 124.552 16.5204 127.339 16.5204C130.126 16.5204 131.831 14.2285 131.831 11.7533ZM124.956 11.7533C124.956 9.79142 125.817 8.47129 127.339 8.47129C128.879 8.47129 129.741 9.79142 129.741 11.7533C129.741 13.6968 128.879 15.0353 127.339 15.0353C125.817 15.0353 124.956 13.6968 124.956 11.7533Z" />
+                                <path
+                                    d="M136.306 12.78L133.867 16.3371H131.612L135.132 11.4049L132.07 7.1695H134.325L136.306 10.0298L138.286 7.1695H140.523L137.479 11.3866L140.981 16.3371H138.744L136.306 12.78Z" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1_555">
+                                    <rect width="141" height="20" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <div id="humburger">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px">
+                            <path d="M120-240v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="nav--bottom" id="navbar--list">
+                    <ol class="nav--list" >
+                        <li id="nav--item" >
+                            <a href="#setup" class="nav--item__link">Product</a>       
+                            <img id="nav-drop" src="./images/brand_drop.svg" alt="no img?">
+                                <ol id="nav--dorpdown">
+                                    <li class="nav--drop__item"><a class="nav--drop__link" href="#"> Raximjon</a></li>
+                                    <li class="nav--drop__item"><a class="nav--drop__link" href="#"> Murodbek</a></li>
+                                    <li class="nav--drop__item"><a class="nav--drop__link" href="#"> Bexruzbek</a></li>
+                                    <li class="nav--drop__item"><a class="nav--drop__link" href="#"> Ozodbek </a></li>
+                                </ol>
+                        </li>
+                        <li id="nav--item" >
+                            <a href="#ios" class="nav--item__link">Explore</a>
+                            <img id="nav-drop-1" src="./images/brand_drop.svg" alt="no img?">
+                            <ol id="nav--dorpdown-1">
+                                <li class="nav--drop__item"><a class="nav--drop__link" href="#"> Raximjon</a></li>
+                                <li class="nav--drop__item"><a class="nav--drop__link" href="#"> Murodbek</a></li>
+                                <li class="nav--drop__item"><a class="nav--drop__link" href="#"> Bexruzbek</a></li>
+                                <li class="nav--drop__item"><a class="nav--drop__link" href="#"> Ozodbek </a></li>
+                            </ol>
+                        </li>
+                        <li id="nav--item" >
+                            <a href="#corusel" class="nav--item__link">Resources</a>
+                            <img id="nav-drop-2" src="./images/brand_drop.svg" alt="no img?">
+                            <ol id="nav--dorpdown-2">
+                                <li class="nav--drop__item"><a class="nav--drop__link" href="#"> Raximjon</a></li>
+                                <li class="nav--drop__item"><a class="nav--drop__link" href="#"> Murodbek</a></li>
+                                <li class="nav--drop__item"><a class="nav--drop__link" href="#"> Bexruzbek</a></li>
+                                <li class="nav--drop__item"><a class="nav--drop__link" href="#"> Ozodbek </a></li>
+                            </ol>
+                        </li>
+                        <li id="nav--item" >
+                            <a href="#middle--corusel" class="nav--item__link">Support</a>
+                            <img id="nav-drop-3" src="./images/brand_drop.svg" alt="no img?">
+                                <ol id="nav--dorpdown-3">
+                                    <li class="nav--drop__item"><a class="nav--drop__link" href="#"> Raximjon</a></li>
+                                    <li class="nav--drop__item"><a class="nav--drop__link" href="#"> Murodbek</a></li>
+                                    <li class="nav--drop__item"><a class="nav--drop__link" href="#"> Bexruzbek</a></li>
+                                    <li class="nav--drop__item"><a class="nav--drop__link" href="#"> Ozodbek </a></li>
+                                </ol>
+                        </li>
+                        <li id="nav--item" >
+                            <a href="#bottom--corusel" class="nav--item__link jobs">Jobs</a>
+                            <span class="jobs-1">1</span>
+                        </li>
+                    </ol>
+                    <div class="nav--links">
+                        <div class="dark--mode">
+                            <img src="./images/dark_mode.svg" alt="dark mode">
+                            <img src="./images/light_mode.svg" alt="light mode">
+                        </div>
+                        <a href="" class="nav--link">Sign In </a>
+                        <a href="" class="nav--link">Create Sandbox </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- hero start  -->
+
+        <section id="hero">
+            <div class="container">
+                <div class="hero--wrapper"> 
+                    <div class="hero-image">
+                        <img src="./images/hero_big.png" alt="The new CodeSpandbox Experience">
+                    </div>
+                    <div class="hero--main">
+                        <span class="hero--main--top">CodeSandbox</span>
+                        <h1 class="hero--main__title">Where teams build faster, together.</h1>
+                        <p class="hero--main__text">Create, share, and get feedback with collaborative sandboxes for
+                            rapid web development.</p>
+                        <a href="" class="hero--main__link">
+                            <\> Start coding for free
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- setup start  -->
+
+        <section id="setup">
+            <div class="container">
+                <div class="setup--wrappper">
+                    <div class="setup--bar">
+                        <ul class="setup--bar__list">
+                            <li class="setup--item__bar">No setup</li>
+                            <li class="setup--item__bar">Superfast</li>
+                            <li class="setup--item__bar">Multiplayer</li>
+                            <li class="setup--item__bar">Updates live</li>
+                            <li class="setup--item__bar">Shared</li>
+                        </ul>
+                        <div class="setup-texts">
+                            <p class="setup-text">A sandbox needs no setup - use a template to kickstart new projects,
+                                or start from a GitHub repo and begin coding in
+                                seconds.</p>
+
+                        </div>
+                    </div>
+                    <div class="setup--top__image">
+                        <img src="./images/setup_1.png" alt="there is visual studio code desktop">
+                    </div>
+                    <div class="setup--bottom__image">
+                        <img src="./images/setup_s.png"
+                            alt="there is visual studio code macbook desktop and mobile desktop">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ios  -->
+
+        <section id="ios">
+            <div class="container">
+                <div class="ios-wrapper">
+                    <div class="ios--main">
+                        <span class="ios--main__top">CodeSandbox for iOS</span>
+                        <h2 class="ios--main__title">Anywhere, anytime.</h2>
+                        <p class="ios--main__text">Experience the future of web development and build projects with the
+                            first cloud IDE for iOS.</p>
+                        <a href="" class="ais--main__link">Learn more</a>
+                    </div>
+                    <div class="ios--photos">
+                        <img class="ios--big" src="./images/ios-big.png" alt="there is a CodeSandbox on desktop ">
+                        <div class="ois--photos--smalls">
+                            <div class="ios--photo-left">
+                                <img class="ios--left__top" src="./images/ios-left-top.png"
+                                    alt="there is a our site user">
+                                <img class="ios--left__middle" src="./images/ios-left-middle.png"
+                                    alt="there is a our site user">
+                                <img class="ios--left__bottom" src="./images/ios-left-bottom.png"
+                                    alt="there is a our site user">
+                            </div>
+                            <div class="ios--photo-right">
+                                <img class="ios-top" src="./images/ios-right-top.png" alt="there is a our site user">
+                                <img class="ios-middle" src="./images/ios-right-middle.png"
+                                    alt="there is a our site user">
+                                <img class="ios-bottom" src="./images/ios-rigt-bottom.png"
+                                    alt="there is a our site user">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- corusels -->
+
+        <section id="corusel">
+            <div class="container">
+                <div class="corus--wrapper">
+                    <div class="corus--top-corusel">
+                        <div class="corus--corusel__main">
+                            <h2 class="corus--corusel__title">Code collaboration made easy.</h2>
+                            <p class="corus--corusel__text">A link is all you need to hop into a sandbox and keep
+                                development work flowing.</p>
+                        </div>
+                        <ul class="corus--corusel__bar">
+                            <li class="corus--coruse__card">
+                                <div class="corus--coruse-image">
+                                    <svg width="100" height="100" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M58.2691 63.9035L40.501 53.645L30.2425 71.4132L48.0107 81.6716L58.2691 63.9035Z"
+                                            stroke-width="4" />
+                                        <path d="M30.4051 21.9434L41.9581 41.2125L19.4941 40.8418L30.4051 21.9434Z"
+                                            stroke-width="4" />
+                                        <path
+                                            d="M80.5193 48.2785C83.5234 43.0752 81.7406 36.4217 76.5373 33.4175C71.3339 30.4134 64.6804 32.1962 61.6763 37.3995C58.6721 42.6029 60.4549 49.2564 65.6583 52.2605C70.8616 55.2647 77.5151 53.4819 80.5193 48.2785Z"
+                                            stroke-width="4" />
+                                    </svg>
+                                </div>
+                                <h3 class="corus--item__title">Rapid prototyping</h3>
+                                <p class="curus--item__text">Quickly create real, working prototypes. Test ideas earlier
+                                    and iterate more.</p>
+                            </li>
+                            <li class="corus--coruse__card">
+                                <div class="corus--coruse-image">
+                                    <svg width="100" height="100" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M62.7922 46.7101C67.5272 46.7101 71.3657 42.8716 71.3657 38.1365C71.3657 33.4015 67.5272 29.563 62.7922 29.563C58.0571 29.563 54.2186 33.4015 54.2186 38.1365C54.2186 42.8716 58.0571 46.7101 62.7922 46.7101Z"
+                                            stroke-width="4" stroke-linecap="square" />
+                                        <path
+                                            d="M78.6524 70.999C78.6524 62.2396 71.5515 55.1387 62.7921 55.1387C54.0327 55.1387 46.9318 62.2396 46.9318 70.999"
+                                            stroke-width="4" stroke-linecap="square" />
+                                        <path
+                                            d="M42.8826 55.7144C32.5667 55.7144 24.1426 63.8138 23.6224 74.0004C23.5942 74.552 24.0446 75.0001 24.5969 75.0001H61.1684C61.7206 75.0001 62.1711 74.552 62.1429 74.0004C61.6227 63.8138 53.1985 55.7144 42.8826 55.7144Z" />
+                                        <g filter="url(#filter0_d_1_612)">
+                                            <path
+                                                d="M42.8828 48.5716C48.879 48.5716 53.7399 43.7107 53.7399 37.7145C53.7399 31.7183 48.879 26.8574 42.8828 26.8574C36.8866 26.8574 32.0257 31.7183 32.0257 37.7145C32.0257 43.7107 36.8866 48.5716 42.8828 48.5716Z"
+                                                stroke-width="4" stroke-linecap="square" />
+                                            <path
+                                                d="M62.1684 75.0001C62.1684 64.3489 53.5338 55.7144 42.8826 55.7144C32.2314 55.7144 23.5969 64.3489 23.5969 75.0001"
+                                                stroke-width="4" stroke-linecap="square" />
+                                        </g>
+                                        <defs>
+                                            <filter id="filter0_d_1_612" x="3.59692" y="6.85742" width="82.5715"
+                                                height="92.1426" filterUnits="userSpaceOnUse"
+                                                color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                    result="hardAlpha" />
+                                                <feOffset dx="2" dy="2" />
+                                                <feGaussianBlur stdDeviation="10" />
+                                                <feComposite in2="hardAlpha" operator="out" />
+                                                <feColorMatrix type="matrix"
+                                                    values="0 0 0 0 0.0823529 0 0 0 0 0.0823529 0 0 0 0 0.0823529 0 0 0 1 0" />
+                                                <feBlend mode="normal" in2="BackgroundImageFix"
+                                                    result="effect1_dropShadow_1_612" />
+                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_612"
+                                                    result="shape" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+
+                                </div>
+                                <h3 class="corus--item__title">Knowledge sharing</h3>
+                                <p class="curus--item__text">Use code, apps, and templates collectively. Learn from each
+                                    other and bake-in best practice.</p>
+                            </li>
+                            <li class="corus--coruse__card">
+                                <div class="corus--coruse-image">
+                                    <svg width="100" height="100" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M76.125 43.5H43.625V69.0357H69.1607L76.125 76V43.5Z" stroke-width="4"
+                                            stroke-linecap="round" />
+                                        <g filter="url(#filter0_d_1_620)">
+                                            <path d="M24.875 26H67.375V59.3929H33.9821L24.875 68.5V26Z" />
+                                            <path d="M24.875 26H67.375V59.3929H33.9821L24.875 68.5V26Z" stroke-width="4"
+                                                stroke-linecap="round" />
+                                        </g>
+                                        <defs>
+                                            <filter id="filter0_d_1_620" x="4.875" y="6" width="86.5" height="89.3286"
+                                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                    result="hardAlpha" />
+                                                <feOffset dx="2" dy="2" />
+                                                <feGaussianBlur stdDeviation="10" />
+                                                <feComposite in2="hardAlpha" operator="out" />
+                                                <feColorMatrix type="matrix"
+                                                    values="0 0 0 0 0.0823529 0 0 0 0 0.0823529 0 0 0 0 0.0823529 0 0 0 1 0" />
+                                                <feBlend mode="normal" in2="BackgroundImageFix"
+                                                    result="effect1_dropShadow_1_620" />
+                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_620"
+                                                    result="shape" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <h3 class="corus--item__title">Better feedback</h3>
+                                <p class="curus--item__text">Give and get feedback, on code or visuals, right in the
+                                    editor. Take action and move forward faster.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div  id="middle--corusel" class="corus--top-corusel middle--corusel">
+                        <div class="corus--corusel__main">
+                            <h2 class="corus--corusel__title">The best JavaScript
+                                dev experience.</h2>
+                            <p class="corus--corusel__text">A link is all you need to hop into a sandbox and keep
+                                development work flowing.</p>
+                        </div>
+                        <ul class="corus--corusel__bar">
+                            <li class="corus--coruse__card">
+                                <div class="corus--coruse-image">
+                                    <svg width="100" height="32" viewBox="0 0 100 32"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M0.221985 25.1112H12.667V6.44417H18.889V25.1112H25.111V0.222168H0.221985V25.1122V25.1112ZM31.334 0.222168V31.3332H43.778V25.1112H56.222V0.222168H31.333H31.334ZM50 18.8902H43.778V6.44417H50V18.8902ZM62.445 0.222168V25.1122H74.889V6.44317H81.111V25.1102H87.333V6.44417H93.556V25.1112H99.778V0.222168H62.445Z" />
+                                    </svg>
+                                </div>
+                                <h3 class="corus--item__title">Supercharged
+                                    with npm</h3>
+                                <p class="curus--item__text">Use private packages, or any of the 1M+ public ones, to
+                                    build powerful apps quickly.</p>
+                            </li>
+                            <li class="corus--coruse__card">
+                                <div class="corus--coruse-image">
+                                    <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M4 0C2.93913 0 1.92172 0.421428 1.17157 1.17157C0.421428 1.92172 0 2.93913 0 4V36C0 37.0609 0.421428 38.0783 1.17157 38.8284C1.92172 39.5786 2.93913 40 4 40H36C37.0609 40 38.0783 39.5786 38.8284 38.8284C39.5786 38.0783 40 37.0609 40 36V4C40 2.93913 39.5786 1.92172 38.8284 1.17157C38.0783 0.421428 37.0609 0 36 0H4ZM18.618 22.706H10.974C10.406 22.706 10 22.313 10 21.786C10 21.488 10.122 21.217 10.352 20.92L22.649 5.565C23.556 4.415 25.003 5.159 24.475 6.553L20.444 17.51H28.088C28.656 17.51 29.062 17.916 29.062 18.43C29.062 18.74 28.94 19.011 28.71 19.296L16.413 34.665C15.506 35.801 14.059 35.057 14.586 33.664L18.618 22.706Z" />
+                                    </svg>
+
+                                </div>
+                                <h3 class="corus--item__title">Optimized for
+                                    frameworks</h3>
+                                <p class="curus--item__text">Custom environments built specifically for React, Vue,
+                                    Angular, and many more.</p>
+                            </li>
+                            <li class="corus--coruse__card">
+                                <div class="corus--coruse-image">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M44.78 12.253C42.634 8.483 39.723 5.499 36.046 3.299C32.37 1.1 28.354 0 24 0C19.646 0 15.63 1.1 11.953 3.3C8.276 5.5 5.365 8.483 3.219 12.253C1.073 16.023 0 20.138 0 24.6C0 29.96 1.526 34.781 4.578 39.063C7.63 43.345 11.573 46.308 16.406 47.952C16.968 48.059 17.385 47.984 17.656 47.728C17.926 47.472 18.062 47.151 18.062 46.768L18.046 45.038C18.036 43.948 18.03 42.998 18.03 42.187L17.312 42.314C16.853 42.401 16.275 42.437 15.577 42.427C14.8479 42.4135 14.1213 42.3382 13.405 42.202C12.6397 42.0567 11.9214 41.7272 11.312 41.242C10.6656 40.7389 10.1863 40.0523 9.937 39.272L9.624 38.535C9.416 38.045 9.088 37.499 8.64 36.902C8.192 36.304 7.74 35.898 7.28 35.685L7.062 35.525C6.91156 35.4132 6.77523 35.2836 6.656 35.139C6.54035 35.0046 6.44562 34.8536 6.375 34.691C6.312 34.541 6.365 34.418 6.531 34.321C6.698 34.225 7 34.179 7.437 34.179L8.062 34.274C8.479 34.36 8.994 34.616 9.609 35.044C10.223 35.47 10.729 36.025 11.124 36.708C11.604 37.584 12.181 38.251 12.859 38.711C13.536 39.17 14.219 39.399 14.906 39.399C15.593 39.399 16.186 39.346 16.686 39.239C17.186 39.133 17.656 38.972 18.093 38.759C18.28 37.327 18.791 36.228 19.623 35.459C18.5423 35.3501 17.4717 35.1572 16.421 34.882C15.473 34.626 14.494 34.21 13.484 33.632C12.5125 33.0893 11.6575 32.3604 10.968 31.487C10.301 30.632 9.754 29.511 9.328 28.123C8.901 26.735 8.687 25.133 8.687 23.318C8.687 20.734 9.51 18.534 11.156 16.718C10.385 14.776 10.458 12.598 11.374 10.185C11.979 9.992 12.874 10.137 14.062 10.617C15.25 11.097 16.119 11.509 16.672 11.85C17.224 12.192 17.666 12.48 18 12.715C19.9512 12.1583 21.9709 11.8782 24 11.883C26.062 11.883 28.062 12.16 30 12.715L31.188 11.947C32 11.434 32.958 10.964 34.062 10.537C35.166 10.11 36.01 9.993 36.594 10.185C37.531 12.598 37.614 14.776 36.844 16.719C38.489 18.535 39.313 20.735 39.313 23.319C39.313 25.134 39.098 26.74 38.672 28.139C38.245 29.539 37.693 30.659 37.016 31.503C36.3148 32.3668 35.4559 33.0896 34.485 33.633C33.475 34.21 32.495 34.626 31.547 34.883C30.4959 35.1583 29.425 35.3512 28.344 35.46C29.427 36.42 29.969 37.937 29.969 40.008V46.766C29.969 47.15 30.099 47.471 30.359 47.727C30.62 47.983 31.031 48.058 31.594 47.951C36.428 46.307 40.37 43.344 43.422 39.061C46.474 34.783 48 29.962 48 24.6C47.999 20.138 46.925 16.022 44.78 12.253Z" />
+                                    </svg>
+                                </div>
+                                <h3 class="corus--item__title">with GitHub
+                                    Integrated</h3>
+                                <p class="curus--item__text">Import and run repos direct from GitHub. Or export your
+                                    sandbox to a repo.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="corus--top-corusel bottom--corusel" id="bottom--corusel">
+                        <div class="corus--corusel__main">
+                            <h2 class="corus--corusel__title">What are others saying?.</h2>
+                        </div>
+                        <ul class="corus--corusel__bar">
+                            <li class="corus--coruse__card">
+                                <p class="corus--coruse__text">“It's dramatically improved my experience of sharing
+                                    ideas”</p>
+                                <div class="corus--corusel-b__img">
+                                    <img src="./images/bottom-corusel__user.png" alt="there is a our site user">
+                                </div>
+                                <span class="corusel--user__name">Brian Vaughn</span>
+                                <span class="corusel--user__about">Software Engineer, React Core Team</span>
+
+                            </li>
+                            <li class="corus--coruse__card">
+                                <p class="corus--coruse__text">“It's dramatically improved my experience of sharing
+                                    ideas”</p>
+                                <div class="corus--corusel-b__img">
+                                    <img src="./images/bottom-corusel__user2.png" alt="there is a our site user">
+                                </div>
+                                <span class="corusel--user__name">Brian Vaughn</span>
+                                <span class="corusel--user__about">Software Engineer, React Core Team</span>
+
+                            </li>
+                            <li class="corus--coruse__card">
+                                <p class="corus--coruse__text">“It's dramatically improved my experience of sharing
+                                    ideas”</p>
+                                <div class="corus--corusel-b__img">
+                                    <img src="./images/bottom-corusel__user3.png" alt="there is a our site user">
+                                </div>
+                                <span class="corusel--user__name">Brian Vaughn</span>
+                                <span class="corusel--user__about">Software Engineer, React Core Team</span>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- board -->
+
+        <section id="board">
+            <div class="container board--wrapper">
+                <div class="board--main">
+                    <h2 class="board--main__title">Free for personal use.</h2>
+                    <p class="board--main__text">apps with a community who’ve crafted
+                        Create static sites, components, or full-stack web 17,581,604 public sandboxes and counting.</p>
+                </div>
+            </div>
+            <div class="board--cards">
+                <div class="board--card">
+                    <img src="./images/bord-1.png" alt="no img ?">
+                </div>
+                <div class="board--card">
+                    <img src="./images/bord-2.png" alt="no img ?">
+                </div>
+                <div class="board--card">
+                    <img src="./images/bord-3.png" alt="no img ?">
+                </div>
+                <div class="board--card">
+                    <img src="./images/bord-4.png" alt="no img ?">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="footer--wrapper">
+                <div class="footer--menus">
+                    <ul class="footer--menu">
+                        <li class="footer--menu__item"><a href=""
+                                class="footer--menu__link footer--top__link">Product</a></li>
+                        <li class="footer--menu__item"><a href="" class="footer--menu__link">Coding</a></li>
+                        <li class="footer--menu__item"><a href="" class="footer--menu__link">Prototyping</a></li>
+                        <li class="footer--menu__item"><a href="" class="footer--menu__link">Knowledge sharing</a></li>
+                        <li class="footer--menu__item"><a href="" class="footer--menu__link">Feedback</a></li>
+                        <li class="footer--menu__item"><a href="" class="footer--menu__link">What’s new</a></li>
+                    </ul>
+                    <ul class="footer--menu">
+                        <li class="footer--menu__item"><a href=""
+                                class="footer--menu__link footer--top__link">Explore</a></li>
+                        <li class="footer--menu__item"><a href="" class="footer--menu__link">Featured sandboxes</a></li>
+                        <li class="footer--menu__item"><a href="" class="footer--menu__link">Search sandboxes</a></li>
+                    </ul>
+                    <ul class="footer--menu">
+                        <li class="footer--menu__item"><a href="" class="footer--menu__link footer--top__link">For</a>
+                        </li>
+                        <li class="footer--menu__item"><a href="" class="footer--menu__link">Individuals</a></li>
+                        <li class="footer--menu__item"><a href="" class="footer--menu__link">Teams</a></li>
+                        <li class="footer--menu__item"><a href="" class="footer--menu__link">Enterprise</a></li>
+                    </ul>
+                    <ul class="footer--menu">
+                        <li class="footer--menu__item"><a href="" class="footer--menu__link footer--top__link">About</a>
+                        </li>
+                        <li class="footer--menu__item"><a href="" class="footer--menu__link">Pricing</a></li>
+                        <li class="footer--menu__item"><a href="" class="footer--menu__link">Company</a></li>
+                        <li class="footer--menu__item"><a href="" class="footer--menu__link">Blog</a></li>
+                        <li class="footer--menu__item"><a href="" class="footer--menu__link">Podcasts</a></li>
+                        <li class="footer--menu__item jobs"><a href="" class="footer--menu__link">Jobs</a>
+                        <span class="jobs-1">1</span></li>
+                        <li class="footer--menu__item"><a href="" class="footer--menu__link">Terms of use</a></li>
+                        <li class="footer--menu__item"><a href="" class="footer--menu__link">Privacy policy</a></li>
+                    </ul>
+                    <ul class="footer--menu">
+                        <li class="footer--menu__item"><a href=""
+                                class="footer--menu__link footer--top__link">Support</a></li>
+                        <li class="footer--menu__item"><a href="" class="footer--menu__link">Documentation</a></li>
+                        <li class="footer--menu__item"><a href="" class="footer--menu__link">Contact support</a></li>
+                        <li class="footer--menu__item"><a href="" class="footer--menu__link">Status</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer--bottom">
+                    <div class="footer--bottom__images">
+                        <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M15.0463 3C7.27401 3 1 9.19191 1 16.8625C1 22.962 5.02661 28.1373 10.6451 29.9856C11.3943 30.0781 11.5815 29.7084 11.5815 29.3387V26.9359C7.64858 27.7676 6.80581 25.0876 6.80581 25.0876C6.15031 23.5165 5.21389 23.0544 5.21389 23.0544C3.9029 22.2226 5.30753 22.2226 5.30753 22.2226C6.71216 22.3151 7.4613 23.6089 7.4613 23.6089C8.67865 25.7345 10.7388 25.0876 11.5815 24.7179C11.6752 23.7937 12.0498 23.2392 12.518 22.8696C9.42778 22.4999 6.15031 21.2985 6.15031 16.0307C6.15031 14.5521 6.71216 13.2582 7.55494 12.3341C7.36766 11.9644 6.89945 10.5782 7.64858 8.63741C7.64858 8.63741 8.86593 8.26774 11.4879 10.0237C12.6116 9.74641 13.829 9.56158 15.0463 9.56158C16.2636 9.56158 17.481 9.74641 18.6047 10.0237C21.3203 8.26774 22.444 8.63741 22.444 8.63741C23.1932 10.5782 22.7249 11.9644 22.5377 12.3341C23.4741 13.2582 23.9423 14.5521 23.9423 16.0307C23.9423 21.3909 20.6648 22.4999 17.5746 22.8696C18.0428 23.3316 18.5111 24.1634 18.5111 25.4572V29.2463C18.5111 29.616 18.792 30.0781 19.4475 29.8932C25.066 28.0449 28.999 22.8696 28.999 16.7701C29.0926 9.19191 22.8186 3 15.0463 3Z" />
+                        </svg>
+                        <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M29 8.48586C28.0435 8.90758 27.0153 9.19247 25.9364 9.32064C27.0376 8.66455 27.8836 7.62563 28.2817 6.38761C27.251 6.99525 26.1094 7.43635 24.8943 7.67408C23.9214 6.64369 22.5351 6 21.0008 6C18.055 6 15.6665 8.37358 15.6665 11.3013C15.6665 11.7168 15.7137 12.1215 15.8047 12.5095C11.3715 12.2884 7.44102 10.1778 4.81008 6.97031C4.35092 7.75328 4.0878 8.66391 4.0878 9.63551C4.0878 11.4748 5.02952 13.0975 6.46082 14.0482C5.58644 14.0207 4.76393 13.7822 4.04477 13.3851C4.04416 13.4072 4.04416 13.4294 4.04416 13.4518C4.04416 16.0203 5.88289 18.1629 8.32312 18.6503C7.87553 18.7715 7.40428 18.8362 6.91781 18.8362C6.5741 18.8362 6.24 18.8028 5.91422 18.7411C6.59308 20.8472 8.56297 22.38 10.8973 22.4226C9.07166 23.8446 6.7717 24.6922 4.27244 24.6922C3.84188 24.6922 3.4173 24.667 3 24.618C5.36067 26.1223 8.16452 27 11.1769 27C20.9884 27 26.3539 18.9218 26.3539 11.9159C26.3539 11.6861 26.3487 11.4575 26.3384 11.23C27.3805 10.4827 28.2848 9.54907 28.9999 8.48586H29Z" />
+                        </svg>
+                        <svg width="26" height="20" viewBox="0 0 26 20" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M22.0101 1.65789C20.3529 0.890529 18.5759 0.325158 16.7179 0.00135845C16.6841 -0.00489155 16.6503 0.0107283 16.6328 0.0419583C16.4043 0.452178 16.1511 0.987349 15.9739 1.40799C13.9754 1.10606 11.9873 1.10606 10.0298 1.40799C9.8525 0.977999 9.5902 0.452178 9.3606 0.0419583C9.3432 0.0117683 9.3094 -0.00385155 9.2756 0.00135845C7.4186 0.324128 5.64152 0.889489 3.98335 1.65789C3.96899 1.66414 3.95669 1.67456 3.94852 1.68808C0.577837 6.7701 -0.345533 11.7273 0.107447 16.6229C0.109487 16.6469 0.122817 16.6698 0.141257 16.6843C2.36514 18.3325 4.51935 19.3331 6.63355 19.9964C6.66739 20.0068 6.70324 19.9943 6.72477 19.9662C7.2249 19.2769 7.6707 18.5502 8.0529 17.7859C8.0755 17.7412 8.054 17.688 8.0079 17.6703C7.3007 17.3996 6.6274 17.0696 5.97971 16.6948C5.92848 16.6646 5.92437 16.5906 5.9715 16.5552C6.1078 16.4521 6.24414 16.3449 6.37428 16.2366C6.39783 16.2168 6.43064 16.2127 6.45833 16.2252C10.7134 18.1857 15.32 18.1857 19.5249 16.2252C19.5525 16.2116 19.5854 16.2158 19.6099 16.2356C19.7401 16.3439 19.8764 16.4521 20.0137 16.5552C20.0609 16.5906 20.0578 16.6646 20.0066 16.6948C19.3589 17.0769 18.6855 17.3996 17.9774 17.6693C17.9313 17.687 17.9108 17.7412 17.9333 17.7859C18.3238 18.5491 18.7696 19.2759 19.2605 19.9651C19.281 19.9943 19.3179 20.0068 19.3517 19.9964C21.4761 19.3331 23.6303 18.3325 25.8542 16.6843C25.8737 16.6698 25.886 16.6479 25.8881 16.624C26.4302 10.964 24.98 6.0476 22.0439 1.68912C22.0367 1.67456 22.0245 1.66414 22.0101 1.65789ZM8.6884 13.642C7.4073 13.642 6.35173 12.455 6.35173 10.9974C6.35173 9.5397 7.3868 8.3528 8.6884 8.3528C10.0001 8.3528 11.0455 9.5501 11.025 10.9974C11.025 12.455 9.9899 13.642 8.6884 13.642ZM17.3276 13.642C16.0466 13.642 14.991 12.455 14.991 10.9974C14.991 9.5397 16.0261 8.3528 17.3276 8.3528C18.6394 8.3528 19.6847 9.5501 19.6643 10.9974C19.6643 12.455 18.6394 13.642 17.3276 13.642Z" />
+                        </svg>
+                    </div>
+                    <p class="footer--bottom__text">Copyright © 2022 CodeSandbox BV.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
+
+<a id="backtop" href="#hero">
+    <img src="./images/to-the-top.png" alt="no img?">
+</a>
+
+<!-- Owl-carousel-->
+<!-- Aos library-->
+<!-- gitHub link va netlify likini tash kerak.-->
