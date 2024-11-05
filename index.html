@@ -5,7 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeSandbox</title>
-    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./fonts/font.css">
@@ -14,9 +21,9 @@
 
 <body>
 
-    <!-- <div id="loading">
+    <div id="loading">
         <span class="loader"></span>
-    </div> -->
+    </div>
     <header id="header">
         <div class="container">
             <nav>
@@ -64,18 +71,18 @@
                     </div>
                 </div>
                 <div class="nav--bottom" id="navbar--list">
-                    <ol class="nav--list" >
-                        <li id="nav--item" >
-                            <a href="#setup" class="nav--item__link">Product</a>       
+                    <ol class="nav--list">
+                        <li id="nav--item">
+                            <a href="#setup" class="nav--item__link">Product</a>
                             <img id="nav-drop" src="./images/brand_drop.svg" alt="no img?">
-                                <ol id="nav--dorpdown">
-                                    <li class="nav--drop__item"><a class="nav--drop__link" href="#"> Raximjon</a></li>
-                                    <li class="nav--drop__item"><a class="nav--drop__link" href="#"> Murodbek</a></li>
-                                    <li class="nav--drop__item"><a class="nav--drop__link" href="#"> Bexruzbek</a></li>
-                                    <li class="nav--drop__item"><a class="nav--drop__link" href="#"> Ozodbek </a></li>
-                                </ol>
+                            <ol id="nav--dorpdown">
+                                <li class="nav--drop__item"><a class="nav--drop__link" href="#"> Raximjon</a></li>
+                                <li class="nav--drop__item"><a class="nav--drop__link" href="#"> Murodbek</a></li>
+                                <li class="nav--drop__item"><a class="nav--drop__link" href="#"> Bexruzbek</a></li>
+                                <li class="nav--drop__item"><a class="nav--drop__link" href="#"> Ozodbek </a></li>
+                            </ol>
                         </li>
-                        <li id="nav--item" >
+                        <li id="nav--item">
                             <a href="#ios" class="nav--item__link">Explore</a>
                             <img id="nav-drop-1" src="./images/brand_drop.svg" alt="no img?">
                             <ol id="nav--dorpdown-1">
@@ -85,7 +92,7 @@
                                 <li class="nav--drop__item"><a class="nav--drop__link" href="#"> Ozodbek </a></li>
                             </ol>
                         </li>
-                        <li id="nav--item" >
+                        <li id="nav--item">
                             <a href="#corusel" class="nav--item__link">Resources</a>
                             <img id="nav-drop-2" src="./images/brand_drop.svg" alt="no img?">
                             <ol id="nav--dorpdown-2">
@@ -95,17 +102,17 @@
                                 <li class="nav--drop__item"><a class="nav--drop__link" href="#"> Ozodbek </a></li>
                             </ol>
                         </li>
-                        <li id="nav--item" >
+                        <li id="nav--item">
                             <a href="#middle--corusel" class="nav--item__link">Support</a>
                             <img id="nav-drop-3" src="./images/brand_drop.svg" alt="no img?">
-                                <ol id="nav--dorpdown-3">
-                                    <li class="nav--drop__item"><a class="nav--drop__link" href="#"> Raximjon</a></li>
-                                    <li class="nav--drop__item"><a class="nav--drop__link" href="#"> Murodbek</a></li>
-                                    <li class="nav--drop__item"><a class="nav--drop__link" href="#"> Bexruzbek</a></li>
-                                    <li class="nav--drop__item"><a class="nav--drop__link" href="#"> Ozodbek </a></li>
-                                </ol>
+                            <ol id="nav--dorpdown-3">
+                                <li class="nav--drop__item"><a class="nav--drop__link" href="#"> Raximjon</a></li>
+                                <li class="nav--drop__item"><a class="nav--drop__link" href="#"> Murodbek</a></li>
+                                <li class="nav--drop__item"><a class="nav--drop__link" href="#"> Bexruzbek</a></li>
+                                <li class="nav--drop__item"><a class="nav--drop__link" href="#"> Ozodbek </a></li>
+                            </ol>
                         </li>
-                        <li id="nav--item" >
+                        <li id="nav--item">
                             <a href="#bottom--corusel" class="nav--item__link jobs">Jobs</a>
                             <span class="jobs-1">1</span>
                         </li>
@@ -128,8 +135,8 @@
 
         <section id="hero">
             <div class="container">
-                <div class="hero--wrapper"> 
-                    <div class="hero-image" > 
+                <div class="hero--wrapper">
+                    <div class="hero-image">
                         <img src="./images/hero_big.png" alt="The new CodeSpandbox Experience">
                     </div>
                     <div class="hero--main">
@@ -165,11 +172,10 @@
 
                         </div>
                     </div>
-                    <div class="setup--top__image"  data-aos="fade-up"
-                         data-aos-anchor-placement="center-center">
+                    <div class="setup--top__image" data-aos="fade-up" data-aos-anchor-placement="center-center">
                         <img src="./images/setup_1.png" alt="there is visual studio code desktop">
                     </div>
-                    <div class="setup--bottom__image"   data-aos="flip-up" data-aos-offset="500">
+                    <div class="setup--bottom__image" data-aos="flip-up" data-aos-offset="500">
                         <img src="./images/setup_s.png"
                             alt="there is visual studio code macbook desktop and mobile desktop">
                     </div>
@@ -191,34 +197,28 @@
                         <a href="" class="ais--main__link">Learn more</a>
                     </div>
                     <div class="ios--photos">
-                        <img
-                        data-aos="zoom-in-down" class="ios--big" src="./images/ios-big.png" alt="there is a CodeSandbox on desktop ">
+                        <img data-aos="zoom-in-down" class="ios--big" src="./images/ios-big.png"
+                            alt="there is a CodeSandbox on desktop ">
                         <div class="ois--photos--smalls">
                             <div class="ios--photo-left">
-                                <img data-aos="fade-right"
-     data-aos-offset="300"
-     data-aos-easing="ease-in-sine"  class="ios--left__top" src="./images/ios-left-top.png"
+                                <img data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                                    class="ios--left__top" src="./images/ios-left-top.png"
                                     alt="there is a our site user">
-                                <img data-aos="fade-right"
-     data-aos-offset="300"
-     data-aos-easing="ease-in-sine"  class="ios--left__middle" src="./images/ios-left-middle.png"
+                                <img data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                                    class="ios--left__middle" src="./images/ios-left-middle.png"
                                     alt="there is a our site user">
-                                <img data-aos="fade-right"
-     data-aos-offset="300"
-     data-aos-easing="ease-in-sine" class="ios--left__bottom" src="./images/ios-left-bottom.png"
+                                <img data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                                    class="ios--left__bottom" src="./images/ios-left-bottom.png"
                                     alt="there is a our site user">
                             </div>
                             <div class="ios--photo-right">
-                                <img data-aos="fade-left"
-       data-aos-offset="300"
-     data-aos-duration="500" class="ios-top" src="./images/ios-right-top.png" alt="there is a our site user">
-                                <img data-aos="fade-left"
-       data-aos-offset="300"
-     data-aos-duration="500" class="ios-middle" src="./images/ios-right-middle.png"
+                                <img data-aos="fade-left" data-aos-offset="300" data-aos-duration="500" class="ios-top"
+                                    src="./images/ios-right-top.png" alt="there is a our site user">
+                                <img data-aos="fade-left" data-aos-offset="300" data-aos-duration="500"
+                                    class="ios-middle" src="./images/ios-right-middle.png"
                                     alt="there is a our site user">
-                                <img data-aos="fade-left"
-       data-aos-offset="300"  data-aos-offset="300"
-     data-aos-duration="500" class="ios-bottom" src="./images/ios-rigt-bottom.png"
+                                <img data-aos="fade-left" data-aos-offset="300" data-aos-offset="300"
+                                    data-aos-duration="500" class="ios-bottom" src="./images/ios-rigt-bottom.png"
                                     alt="there is a our site user">
                             </div>
                         </div>
@@ -238,8 +238,8 @@
                             <p class="corus--corusel__text">A link is all you need to hop into a sandbox and keep
                                 development work flowing.</p>
                         </div>
-                        <ul class="corus--corusel__bar">
-                            <li class="corus--coruse__card"   data-aos-offset="500" data-aos="flip-up" >
+                        <ul class="corus--corusel__bar owl-carousel owl-theme">
+                            <li class="corus--coruse__card item" data-aos-offset="500" data-aos="flip-up">
                                 <div class="corus--coruse-image">
                                     <svg width="100" height="100" viewBox="0 0 100 100"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -257,8 +257,7 @@
                                 <p class="curus--item__text">Quickly create real, working prototypes. Test ideas earlier
                                     and iterate more.</p>
                             </li>
-                            <li class="corus--coruse__card"   
-                            data-aos-offset="400" data-aos="flip-down">
+                            <li class="corus--coruse__card item" data-aos-offset="400" data-aos="flip-down">
                                 <div class="corus--coruse-image">
                                     <svg width="100" height="100" viewBox="0 0 100 100"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -304,7 +303,106 @@
                                 <p class="curus--item__text">Use code, apps, and templates collectively. Learn from each
                                     other and bake-in best practice.</p>
                             </li>
-                            <li class="corus--coruse__card" data-aos-offset="500" data-aos="flip-up">
+                            <li class="corus--coruse__card item" data-aos-offset="500" data-aos="flip-up">
+                                <div class="corus--coruse-image">
+                                    <svg width="100" height="100" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M76.125 43.5H43.625V69.0357H69.1607L76.125 76V43.5Z" stroke-width="4"
+                                            stroke-linecap="round" />
+                                        <g filter="url(#filter0_d_1_620)">
+                                            <path d="M24.875 26H67.375V59.3929H33.9821L24.875 68.5V26Z" />
+                                            <path d="M24.875 26H67.375V59.3929H33.9821L24.875 68.5V26Z" stroke-width="4"
+                                                stroke-linecap="round" />
+                                        </g>
+                                        <defs>
+                                            <filter id="filter0_d_1_620" x="4.875" y="6" width="86.5" height="89.3286"
+                                                filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                    result="hardAlpha" />
+                                                <feOffset dx="2" dy="2" />
+                                                <feGaussianBlur stdDeviation="10" />
+                                                <feComposite in2="hardAlpha" operator="out" />
+                                                <feColorMatrix type="matrix"
+                                                    values="0 0 0 0 0.0823529 0 0 0 0 0.0823529 0 0 0 0 0.0823529 0 0 0 1 0" />
+                                                <feBlend mode="normal" in2="BackgroundImageFix"
+                                                    result="effect1_dropShadow_1_620" />
+                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_620"
+                                                    result="shape" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <h3 class="corus--item__title">Better feedback</h3>
+                                <p class="curus--item__text">Give and get feedback, on code or visuals, right in the
+                                    editor. Take action and move forward faster.</p>
+                            </li>
+                            <li class="corus--coruse__card item" data-aos-offset="500" data-aos="flip-up">
+                                <div class="corus--coruse-image">
+                                    <svg width="100" height="100" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M58.2691 63.9035L40.501 53.645L30.2425 71.4132L48.0107 81.6716L58.2691 63.9035Z"
+                                            stroke-width="4" />
+                                        <path d="M30.4051 21.9434L41.9581 41.2125L19.4941 40.8418L30.4051 21.9434Z"
+                                            stroke-width="4" />
+                                        <path
+                                            d="M80.5193 48.2785C83.5234 43.0752 81.7406 36.4217 76.5373 33.4175C71.3339 30.4134 64.6804 32.1962 61.6763 37.3995C58.6721 42.6029 60.4549 49.2564 65.6583 52.2605C70.8616 55.2647 77.5151 53.4819 80.5193 48.2785Z"
+                                            stroke-width="4" />
+                                    </svg>
+                                </div>
+                                <h3 class="corus--item__title">Rapid prototyping</h3>
+                                <p class="curus--item__text">Quickly create real, working prototypes. Test ideas earlier
+                                    and iterate more.</p>
+                            </li>
+                            <li class="corus--coruse__card item" data-aos-offset="400" data-aos="flip-down">
+                                <div class="corus--coruse-image">
+                                    <svg width="100" height="100" viewBox="0 0 100 100"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M62.7922 46.7101C67.5272 46.7101 71.3657 42.8716 71.3657 38.1365C71.3657 33.4015 67.5272 29.563 62.7922 29.563C58.0571 29.563 54.2186 33.4015 54.2186 38.1365C54.2186 42.8716 58.0571 46.7101 62.7922 46.7101Z"
+                                            stroke-width="4" stroke-linecap="square" />
+                                        <path
+                                            d="M78.6524 70.999C78.6524 62.2396 71.5515 55.1387 62.7921 55.1387C54.0327 55.1387 46.9318 62.2396 46.9318 70.999"
+                                            stroke-width="4" stroke-linecap="square" />
+                                        <path
+                                            d="M42.8826 55.7144C32.5667 55.7144 24.1426 63.8138 23.6224 74.0004C23.5942 74.552 24.0446 75.0001 24.5969 75.0001H61.1684C61.7206 75.0001 62.1711 74.552 62.1429 74.0004C61.6227 63.8138 53.1985 55.7144 42.8826 55.7144Z" />
+                                        <g filter="url(#filter0_d_1_612)">
+                                            <path
+                                                d="M42.8828 48.5716C48.879 48.5716 53.7399 43.7107 53.7399 37.7145C53.7399 31.7183 48.879 26.8574 42.8828 26.8574C36.8866 26.8574 32.0257 31.7183 32.0257 37.7145C32.0257 43.7107 36.8866 48.5716 42.8828 48.5716Z"
+                                                stroke-width="4" stroke-linecap="square" />
+                                            <path
+                                                d="M62.1684 75.0001C62.1684 64.3489 53.5338 55.7144 42.8826 55.7144C32.2314 55.7144 23.5969 64.3489 23.5969 75.0001"
+                                                stroke-width="4" stroke-linecap="square" />
+                                        </g>
+                                        <defs>
+                                            <filter id="filter0_d_1_612" x="3.59692" y="6.85742" width="82.5715"
+                                                height="92.1426" filterUnits="userSpaceOnUse"
+                                                color-interpolation-filters="sRGB">
+                                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                <feColorMatrix in="SourceAlpha" type="matrix"
+                                                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                                                    result="hardAlpha" />
+                                                <feOffset dx="2" dy="2" />
+                                                <feGaussianBlur stdDeviation="10" />
+                                                <feComposite in2="hardAlpha" operator="out" />
+                                                <feColorMatrix type="matrix"
+                                                    values="0 0 0 0 0.0823529 0 0 0 0 0.0823529 0 0 0 0 0.0823529 0 0 0 1 0" />
+                                                <feBlend mode="normal" in2="BackgroundImageFix"
+                                                    result="effect1_dropShadow_1_612" />
+                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_612"
+                                                    result="shape" />
+                                            </filter>
+                                        </defs>
+                                    </svg>
+
+                                </div>
+                                <h3 class="corus--item__title">Knowledge sharing</h3>
+                                <p class="curus--item__text">Use code, apps, and templates collectively. Learn from each
+                                    other and bake-in best practice.</p>
+                            </li>
+                            <li class="corus--coruse__card item" data-aos-offset="500" data-aos="flip-up">
                                 <div class="corus--coruse-image">
                                     <svg width="100" height="100" viewBox="0 0 100 100"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -341,7 +439,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div  id="middle--corusel" class="corus--top-corusel middle--corusel">
+                    <div id="middle--corusel" class="corus--top-corusel middle--corusel">
                         <div class="corus--corusel__main">
                             <h2 class="corus--corusel__title">The best JavaScript
                                 dev experience.</h2>
@@ -349,8 +447,7 @@
                                 development work flowing.</p>
                         </div>
                         <ul class="corus--corusel__bar">
-                            <li class="corus--coruse__card"
-                            data-aos-offset="400" data-aos="flip-down">
+                            <li class="corus--coruse__card" data-aos-offset="400" data-aos="flip-down">
                                 <div class="corus--coruse-image">
                                     <svg width="100" height="32" viewBox="0 0 100 32"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -376,8 +473,7 @@
                                 <p class="curus--item__text">Custom environments built specifically for React, Vue,
                                     Angular, and many more.</p>
                             </li>
-                            <li class="corus--coruse__card"
-                            data-aos-offset="400" data-aos="flip-down">
+                            <li class="corus--coruse__card" data-aos-offset="400" data-aos="flip-down">
                                 <div class="corus--coruse-image">
                                     <svg width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -406,8 +502,7 @@
                                 <span class="corusel--user__about">Software Engineer, React Core Team</span>
 
                             </li>
-                            <li class="corus--coruse__card" 
-                            data-aos-offset="400" data-aos="flip-down">
+                            <li class="corus--coruse__card" data-aos-offset="400" data-aos="flip-down">
                                 <p class="corus--coruse__text">“It's dramatically improved my experience of sharing
                                     ideas”</p>
                                 <div class="corus--corusel-b__img">
@@ -417,7 +512,7 @@
                                 <span class="corusel--user__about">Software Engineer, React Core Team</span>
 
                             </li>
-                            <li class="corus--coruse__card"  data-aos-offset="500" data-aos="flip-up">
+                            <li class="corus--coruse__card" data-aos-offset="500" data-aos="flip-up">
                                 <p class="corus--coruse__text">“It's dramatically improved my experience of sharing
                                     ideas”</p>
                                 <div class="corus--corusel-b__img">
@@ -495,7 +590,8 @@
                         <li class="footer--menu__item"><a href="" class="footer--menu__link">Blog</a></li>
                         <li class="footer--menu__item"><a href="" class="footer--menu__link">Podcasts</a></li>
                         <li class="footer--menu__item jobs"><a href="" class="footer--menu__link">Jobs</a>
-                        <span class="jobs-1">1</span></li>
+                            <span class="jobs-1">1</span>
+                        </li>
                         <li class="footer--menu__item"><a href="" class="footer--menu__link">Terms of use</a></li>
                         <li class="footer--menu__item"><a href="" class="footer--menu__link">Privacy policy</a></li>
                     </ul>
@@ -528,12 +624,19 @@
             </div>
         </div>
     </footer>
+
     <a id="backtop" href="#hero">
         <img src="./images/to-the-top.png" alt="no img?">
     </a>
 
-    
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/main.js"></script>
 </body>
 
